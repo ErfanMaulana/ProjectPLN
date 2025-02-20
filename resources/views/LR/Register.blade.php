@@ -12,7 +12,6 @@
         <div class="row justify-content-center">
             <div class="col-md-6 form-container">
                 <h3 class="text-center">Register</h3>
-                <form action="{{ route('register') }}" method="POST">
                     @csrf
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -30,7 +29,7 @@
                         <label for="password_confirmation">Confirm Password</label>
                         <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
                     </div>
-                    <p class="text-center">I have an account? <a href="{{ route('login') }}">Login</a></p>
+
 
                     <button type="submit" class="btn btn-primary"> Register</button>
                 </form>
