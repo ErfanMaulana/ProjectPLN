@@ -1,8 +1,13 @@
 <?php
+<<<<<<< HEAD
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Auth\LoginController;
+=======
+>>>>>>> dc5a14e2a6f3bbcb4a59c344fc7c4de07e2f981f
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
+<<<<<<< HEAD
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 
 // Route untuk proses login
@@ -14,4 +19,10 @@ Route::get('/dashboard', function () {
 })->middleware('auth');
 
 // Route untuk logout
+=======
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+>>>>>>> dc5a14e2a6f3bbcb4a59c344fc7c4de07e2f981f
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
