@@ -9,7 +9,7 @@
     <h1>Welcome to the Dashboard!</h1>
     <form action="{{ route('logout') }}" method="POST">
         @csrf
-        <button type="submit">tyazdi ?logout?</button>
+        <button type="submit">logout</button>
     </form>
 </body>
 </html>
