@@ -83,6 +83,11 @@
                 <input type="password" name="password" id="password" required>
             </div>
             <button type="submit" class="btn">Login</button>
+
+            <div>
+                <p>Belum punya akun? <a href="{{route ('register')}}">Register</a></p>
+            </div>
+
         </form>
     </div>
 </body>
